@@ -1,20 +1,28 @@
 body {
     margin: 0;
     background-image: url("../images/light_wool.png");
+    color: #777777;
 }
 
 header {
-    background-color: white;
+    background-color: #ffffff;
     position: static
 }
 
 #name {
     background-color: aquamarine;
-    float: left;
+    position: absolute;
+    left: 0;
+    overflow: inherit;
 }
 
 header li {
-    display: inline-block
+    display: inline-block;
+}
+
+#links {
+    position: absolute;
+    right: 0;
 }
 
 #headshot {
@@ -33,6 +41,8 @@ header li {
 }
 
 footer {
-    background-color: gray;
-    position: sticky
+    background-color: #666666;
+    text-align: center;
+    position: sticky;
+    border-top: 8px solid #4aaaa5;
 }
