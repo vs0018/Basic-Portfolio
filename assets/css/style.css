@@ -1,3 +1,8 @@
 body {
-    background: url(assets\images\light_wool.png);
+    background-image: url("../images/light_wool.png");
+}
+
+.pagesection {
+    background-color: white;
+    position: float;
 }
