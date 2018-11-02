@@ -11,6 +11,7 @@ body {
 header {
     background-color: #ffffff;
     position: static;
+    overflow: auto;
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
@@ -21,8 +22,7 @@ header {
 #name {
     background-color: #4aaaa5;
     color: white;
-    position: absolute;
-    left: 0;
+    float: left;
 }
 
 header li {
@@ -30,8 +30,7 @@ header li {
 }
 
 #links {
-    position: absolute;
-    right: 0;
+    float: right;
 }
 
 #headshot {
@@ -39,21 +38,27 @@ header li {
 }
 
 .pagesection {
+    overflow: auto;
     background-color: #ffffff;
     margin: auto;
     width: 960px;
 }
 
-.folioblock {
-    background-color: #4aaaa5;
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+.folioitems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: space-around;
+    height: 600px;
+    margin: 10px;
 }
 
 footer {
     background-color: #666666;
     text-align: center;
-    position: sticky;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     border-top: 8px solid #4aaaa5;
 }
